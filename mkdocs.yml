@@ -1,0 +1,8 @@
+site_name: ITSM-NG Wiki
+site_url: https://wiki.itsm-ng.org/
+repo_url: https://github.com/itsmng/wiki
+nav:
+    - 'index.md'
+    - 'install.md'
+    - 'Bugtracker': 'https://github.com/itsmng/itsm-ng/issues'
+    - 'En savoir plus': 'https://www.itsm-ng.com/'
