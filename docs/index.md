@@ -1,9 +1,12 @@
-## Wiki ITSM NG
+## Introduction
 
 Bienvenue sur le wiki de la solution ITSM NG.
 
-Pour savoir commencer installer la solution : 
+## Débuter avec ITSM NG
 
+Pour savoir commencer installer la solution : [Installer ITSM-NG](/install).
 
-Pour en savoir plus sur le produit : 
+## Quelques liens utiles
+
+Pour en savoir plus sur le produit : [Tous les liens communautaire](https://www.itsm-ng.org).
 
