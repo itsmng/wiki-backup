@@ -7,6 +7,7 @@ ITSM-NG is a GLPI fork with the objective of offering a strong community compone
 ## How to start with ITSM-NG
 
 * [Installation](install.md)
+* [Update ITSM-NG or migrate from GLPI](update.md)
 
 ## Useful links
 
