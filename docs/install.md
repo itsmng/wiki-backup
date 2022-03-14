@@ -108,6 +108,8 @@ Before installation, run the next command to check system requirements :
 
     php bin/console itsmng:system:check_requirements
 
+Result :
+
 | Requirement                                            | Status    | Messages                                            |
 | :----------------------------------------------------- |:---------:| ---------------------------------------------------:|
 | Testing PHP Parser                                     | [OK]      |                                                     |
@@ -156,6 +158,8 @@ Before installation, run the next command to check system requirements :
 If no `ERROR` status, run the next command :
 
     php bin/console itsmng:database:install -H DB_HOST -u DB_USER -p DB_PASSWORD -d DB_NAME
+
+Result :
 
     +---------------+------------+
     | Database host | DB_HOST    |
