@@ -1,12 +1,14 @@
-## Introduction
+# Welcome to the ITSM-NG solution Wiki
 
-Bienvenue sur le wiki de la solution ITSM NG.
+## About ITSM-NG
 
-## Débuter avec ITSM NG
+ITSM-NG is a GLPI fork with the objective of offering a strong community component and relevant technological choices.
 
-Pour savoir commencer installer la solution : [Installer ITSM-NG](/install).
+## How to start with ITSM-NG
 
-## Quelques liens utiles
+* [Installation](install.md)
 
-Pour en savoir plus sur le produit : [Tous les liens communautaire](https://www.itsm-ng.org).
+## Useful links
+
+To learn more about the product, find all our community links [here](https://www.itsm-ng.org).
 
