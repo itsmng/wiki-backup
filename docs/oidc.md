@@ -11,7 +11,7 @@ a simple library that allows an application to authenticate a user through the b
 ## How to setup ITSM-NG with OpenID Connect
 
 ### Go to Setup/Authentication/OpenID connect authentication
-Here you have some options and fields to set.
+Here you have some options and fields to set.\
 ![](img/oidc/oidc_config.png)
 ---
 ***⚠*** *Forced connection will redirect you directly when your are on the login page, to avoid this go to this link :*
