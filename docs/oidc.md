@@ -22,7 +22,7 @@ http://xx.xx.xx.xx/itsm-ng/index.php?noAUTO=1
 
 When you set Acitvate OpenID connect to *yes* and submit it, you will have a new button on login page!
 
-![](img/oidc/oidc_login.png)
+![](img/oidc/oidc_login.png) \
 If you click on *SSO Login* you will be redirected to your provider and you will be able to login. When it's done you have acces to ITSM-NG :-)
 
 ## Useful links
