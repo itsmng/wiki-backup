@@ -45,12 +45,8 @@ Press any key to continue.
 ```
 You will get a summary, so if all is well then press **enter**, otherwise press **ctrl+c** to exit.\
 
-The installation and the downloading of file is started, it will take few minutes.
+The installation and the downloading of the files is started, it will take few minutes.
 
-```
-Do you want to continue ? [Yes/no]
-```
-You will see that at the end of the installation, do not touch anything, the script have already pressed **yes**, please wait...
 ```
 Go to: http://127.0.0.1:9080
 ```
