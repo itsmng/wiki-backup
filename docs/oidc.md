@@ -11,7 +11,9 @@ a simple library that allows an application to authenticate a user through the b
 ## How to setup ITSM-NG with OpenID Connect
 
 ### Go to Setup/Authentication/OpenID connect authentication
-Here you have some options and fields to set.\
+## Configuration
+Here you have some options and fields to set.
+
 ![](img/oidc/oidc_config.png)
 ---
 ***⚠*** *Forced connection will redirect you directly when your are on the login page, to avoid this go to this link :*
@@ -20,7 +22,19 @@ http://xx.xx.xx.xx/itsm-ng/index.php?noAUTO=1
 ```
 ***⚠*** *The last 3 options need to be filled if you want use OpenID Connect*
 
+## Mapping
+
+Every openID connect have different names for the same field so the mapping page can help to set all information correctly!
+
+![](img/oidc/oidc_mapping.png)
+
+To force every OIDC users to update with the mapping sysyem use this command
+```
+php bin/console itsmng:oidc:update
+```
+
 When you set Acitvate OpenID connect to *yes* and submit it, you will have a new button on login page!
+
 
 ![](img/oidc/oidc_login.png) \
 If you click on *SSO Login* you will be redirected to your provider and you will be able to login. When it's done you have acces to ITSM-NG :-)
