@@ -1,8 +1,8 @@
 ## Introduction
 
-Thank you for downloading the ITSM-NG docker installator!
+Thank you for downloading the ITSM-NG docker setup !
 
-## Donwload 
+## Download 
 
 Download the version of your choice at the following link : https://github.com/itsmng/itsm-ng/releases
 
