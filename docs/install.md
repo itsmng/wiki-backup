@@ -5,7 +5,7 @@
 To allow the installation of ITSM-NG, it is necessary to have a Linux or Windows server with the following services installed and configured :  
 * Apache, Nginx, ISS, etc
 * MariaDB >= 10.X or MySQL >= 5.7
-* Php 7.2 or newer
+* PHP 7.2 or newer
 
 `Note on PHP : version 7.4 is still recommended as PHP 7.2 and 7.3 are compatible with the product but are no longer supported by PHP (See `https://www.php.net/supported-versions.php` for more informations).`
 
@@ -31,7 +31,7 @@ The following PHP extensions are optional :
 * php-opcache
 * php-xmlrpc
 
-## Donwload 
+## Download 
 
 Download the version of your choice at the following link : https://github.com/itsmng/itsm-ng/releases
 
@@ -149,11 +149,11 @@ Result :
 | Checking write permissions for temporary files         | [OK]      |                                                     |
 | Checking write permissions for upload files            | [OK]      |                                                     |
 
-[OK] => Librairy installed
+[OK] => Library installed
 
-[WARNING] => Librairy not installed but optionnal
+[WARNING] => Library not installed but optional
 
-[ERROR] => Required librairy not installed
+[ERROR] => Required library not installed
 
 If no `ERROR` status, run the next command :
 
