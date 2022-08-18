@@ -20,10 +20,10 @@ http://xx.xx.xx.xx/itsm-ng/index.php?noAUTO=1
 ```
 ***⚠*** *The last 3 options need to be filled if you want use OpenID Connect*
 
-When you set Acitvate OpenID connect to *yes* and submit it, you will have a new button on login page!
+When you set Activate OpenID connect to *yes* and submit it, you will have a new button on login page!
 
 ![](img/oidc/oidc_login.png) \
-If you click on *SSO Login* you will be redirected to your provider and you will be able to login. When it's done you have acces to ITSM-NG :-)
+If you click on *SSO Login* you will be redirected to your provider and you will be able to login. When it's done you have access to ITSM-NG :-)
 
 ## Useful links
 
