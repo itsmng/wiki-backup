@@ -18,7 +18,7 @@ ITSM-NG is a GLPI fork with the objective of offering a strong community compone
 
 ## Plugins and third party apps
 
-* [Whitelabel (in construction)](whitelabel-plugin.md)
+* [White Label (in construction)](whitelabel-plugin.md)
 * [Edit Translations (in construction)](edittranslation-plugin.md)
 * [Holidays (in construction)](holidays-plugin.md)
 * [Android tech app (in construction)](android-app.md)
