@@ -1,43 +1,54 @@
 # OpenID Connect with ITSM-NG
 
 ## About OpenID Connect
-This is an authentication layer on top of the OAuth 2.0 authorization framework. It allows clients to verify the identity of an end user based on the authentication performed by an authorization server.
+OpenID Connect adds an authentication layer on top of the OAuth 2.0 authorization framework. It allows clients to verify the identity of an end user based on the authentication performed by an authorization server.
 
 ## Dependencies
 
 ITSM-NG will use PHP OpenID Connect Basic Client by **jumbojett**, \
 a simple library that allows an application to authenticate a user through the basic OpenID Connect flow.
 
+___
 ## How to setup ITSM-NG with OpenID Connect
 
-### Go to Setup/Authentication/OpenID connect authentication
+On ITSM-NG, navigate to the **Setup** section, then select **Authentication**. On the displayed page, choose **OpenID connect authentication**. 
+
+The following instructions will guide you through the configuration process : 
+
 ## Configuration
-Here you have some options and fields to set.
 
 ![](img/oidc/oidc_config.png)
----
-***⚠*** *Forced connection will redirect you directly when your are on the login page, to avoid this go to this link :*
+
+On this first pane (see above image), **Activate openID connect** needs to be set to **Yes**.
+
+**Forced connection with openID connect** will prevent users from connecting with any other form of authentication. \
+**⚠** *Forced connection will redirect you directly when reaching the login page. To bypass the redirection, use the following link :*
 ```
 http://xx.xx.xx.xx/itsm-ng/index.php?noAUTO=1
 ```
-***⚠*** *The last 3 options need to be filled if you want use OpenID Connect*
+
+**⚠** The **Provider**, **Client ID** and **Client Secret** fields are required and must be completed with corresponding information from your authorization provider in order to use OpenID Connect.
+
+Hit the **Save** button once done. 
 
 ## Mapping
-
-Every openID connect have different names for the same field so the mapping page can help to set all information correctly!
+The **Mapping** button will take you to the mapping pane (see below image). 
 
 ![](img/oidc/oidc_mapping.png)
 
-To force every OIDC users to update with the mapping sysyem use this command
+Depending on your authorization provider, naming of the fields may change. This section allows you to specify which fields should be used to retrieve the relevant information.
+
+To force the update of OIDC users information in ITSM-NG, use the following command :
 ```
 php bin/console itsmng:oidc:update
 ```
 
-When you set Acitvate OpenID connect to *yes* and submit it, you will have a new button on login page!
+After activating OpenID connect, a new button will appear on the login page !
 
 
-![](img/oidc/oidc_login.png) \
-If you click on *SSO Login* you will be redirected to your provider and you will be able to login. When it's done you have acces to ITSM-NG :-)
+![](img/oidc/oidc_login.png)
+
+Hitting the **SSO Login** button will redirect you to your provider and you will be able to login. Once done, access to ITSM-NG is granted :-)
 
 ## Useful links
 
