@@ -43,3 +43,16 @@ simplexml
 xmlrpc
 zlib
 ng
+debian
+dev
+redhat
+GPG
+ubuntu
+linux
+sid
+AlmaLinux
+CentOS
+dnf
+utils
+remi
+fc
