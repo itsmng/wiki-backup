@@ -44,6 +44,57 @@ After installing the package, navigate to `http://myserver/itsm-ng`
 When a new update is available, update itsm-ng using : 
 `sudo apt update && sudo apt upgrade`
 
-## RPM repository 
 
-*Coming soon*
+## RPM repository 
+### On CentOS / AlmaLinux / Rocky Linux
+
+First, install dnf-utils :
+
+`sudo dnf install dnf-utils`
+
+You will need to install and enable the remi repository. To do so :
+
+```
+sudo dnf -y install https://rpms.remirepo.net/enterprise/remi-release-8.rpm
+sudo yum-config-manager --enable remi
+```
+
+Next step is modifying the PHP version used by the system : 
+
+```
+sudo dnf module reset php
+sudo dnf module install php:remi-8.1
+```
+
+Once done, add the repository for itsm-ng :
+
+`sudo yum-config-manager --add-repo http://rpm.itsm-ng.org/itsm-el8.repo`
+
+Then, launch the install :
+
+`sudo dnf install itsm-ng`
+
+On first installation, a default MySQL user named itsmng (password: itsmng) is generated and only accessible from localhost.
+
+After installing the package, navigate to `http://myserver/itsm-ng` and follow the instructions.
+
+
+
+### On Fedora systems
+
+
+On Fedora systems, install dnf-utils : 
+
+`sudo dnf install dnf-utils`
+
+Then add the repository (replace **fc35** with **fc36** for Fedora 36) : 
+
+`sudo yum-config-manager --add-repo http://rpm.itsm-ng.org/itsm-fc35.repo`
+
+To install itsm-ng, run :
+
+`sudo dnf install itsm-ng`
+
+On first installation, a default MySQL user named itsmng (password: itsmng) is generated and only accessible from localhost.
+
+After installing the package, navigate to `http://myserver/itsm-ng` and follow the instructions.
