@@ -18,7 +18,7 @@ Then add the repository :
 echo "deb http://deb.itsm-ng.org/<repository>/ <distribution> main" | sudo tee /etc/apt/sources.list.d/itsm-ng.list
 sudo apt update
 ```
-You need to replace `repository` accordingly with the linux distrubution you are using : 
+You need to replace `repository` accordingly with the linux distribution you are using : 
 * debian
 * ubuntu
 
