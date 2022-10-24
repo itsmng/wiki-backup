@@ -9,22 +9,28 @@ Accessibility is an compenment to allow the user navigating easily in the interf
 * Use Keyboard shortcuts
 
 ### Change UI zoom
+
 Change the default zoom level by using this feature 
 
 ### Change UI font
-You may want to change the font ITSM-NG, then select the font you want to use 
+
+You may want to change the font ITSM-NG, then select the font you want to use.
+
 `Note : Open-Dyslexic is an open sourced font created to increase readability for readers with dyslexia.`
 
 * Open Dyslexic Regular
 * Open Dyslexic Alta
 * Tiresias Infofont
+
 Go to the folloming link for more information https://opendyslexic.org/
 
 ### Use Keyboard shortcuts
+
 If they are enabled and configured, you can use them to change Tabs
 
 
 ## Supported browsers
+
 * FireFox
 * Brave
 * Chrome
@@ -34,7 +40,7 @@ If they are enabled and configured, you can use them to change Tabs
 
 ## Configuration
 
-Allow permission to the current user in `Profils`
+Allow permission to the current user in `Profils`.
 
 ![allow profil permissions](img/accessibility/allow_profil_permissions.png)
 
