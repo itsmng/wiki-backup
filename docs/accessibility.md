@@ -20,7 +20,7 @@ You may want to change the ITSM-NG font, then select the font you want to use.
 * Open Dyslexic Alta
 * Tiresias Infofont
 
-Go to the folloming link for more information https://opendyslexic.org/
+Go to the following link for more information https://opendyslexic.org/
 
 ### Use Keyboard shortcuts
 If they are enabled and configured, you can use shortcuts to switch between tabs
