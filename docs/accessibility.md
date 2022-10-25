@@ -1,20 +1,18 @@
-# About Accessiblity in ITSM-NG
+# About Accessibility in ITSM-NG
 
-Accessibility is an compenment to allow the user navigating easily in the interface and making ITSM-NG using for every users.
+Accessibility is a component that allows the user to navigate easily on the ITSM-NG interface, making it suitable for and each every user.
 
-## List of accessibilities
+## List of available accessibility options
 
-* Change font
-* Change zoom
-* Use Keyboard shortcuts
+* Font change
+* Zoom level
+* Keyboard shortcuts
 
 ### Change UI zoom
-
-Change the default zoom level by using this feature 
+Change the default zoom level using this feature 
 
 ### Change UI font
-
-You may want to change the font ITSM-NG, then select the font you want to use.
+You may want to change the ITSM-NG font, then select the font you want to use.
 
 `Note : Open-Dyslexic is an open sourced font created to increase readability for readers with dyslexia.`
 
@@ -25,12 +23,10 @@ You may want to change the font ITSM-NG, then select the font you want to use.
 Go to the folloming link for more information https://opendyslexic.org/
 
 ### Use Keyboard shortcuts
-
-If they are enabled and configured, you can use them to change Tabs
+If they are enabled and configured, you can use shortcuts to switch between tabs
 
 
 ## Supported browsers
-
 * FireFox
 * Brave
 * Chrome
@@ -50,11 +46,11 @@ Go to `Preference(My settings)` / `Accessibility`
 
 Here you can change the `font` and `scale`
 
-You can also `Enable/Disable` the `shortcuts`
+You can also `Enable/Disable` the shortcuts
 
 ![setup accessibility](img/accessibility/setup_accessibility.png)
 
-To Set shortcuts: `toggle` the views and `select` the shortcuts you want to set 
+To Set shortcuts: `toggle` the views and select the shortcuts you want to set 
 
 ![set shortcuts](img/accessibility/set_shortcut.png)
 
