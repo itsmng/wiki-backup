@@ -26,7 +26,7 @@ Go to the following link for more information [https://opendyslexic.org/](https:
 
 ## Configuration
 
-Allow access to the accessibility feature in `Profils`.
+Allow access to the accessibility feature in `Profiles`.
 
 ![allow profil permissions](img/accessibility/allow_profil_permissions.png)
 
