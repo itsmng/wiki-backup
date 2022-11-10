@@ -14,7 +14,7 @@ ITSM-NG is a GLPI fork with the objective of offering a strong community compone
 ## Using / configuring ITSM-NG features
 
 * [OpenID Connect](oidc.md)
-* [Accessibility (in construction)](accessibility.md)
+* [Accessibility](accessibility.md)
 
 ## Plugins and third party apps
 
