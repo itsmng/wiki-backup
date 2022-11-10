@@ -9,15 +9,15 @@ Accessibility is a component that allows the user to navigate easily on the ITSM
 * UI Font : change the ITSM-NG font. Below is the list of available fonts :
     * Open Dyslexic Regular
     * Open Dyslexic Alta
-    * Tiresias Infofont
+    * Tiresias Info font
 
 `Note : Open-Dyslexic is an open sourced font created to increase readability for readers with dyslexia.`
 
-Go to the following link for more informations https://opendyslexic.org/
+Go to the following link for more informations [https://opendyslexic.org/](https://opendyslexic.org/)
 
 ## Supported browsers
 
-* FireFox
+* Firefox
 * Brave
 * Chrome
 * Edge
