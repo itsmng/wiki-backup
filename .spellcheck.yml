@@ -13,8 +13,6 @@ matrix:
       ignores:
       - code
       - pre
-      - UI
-      - opendyslexic
   sources:
   - '**/*.md'
   default_encoding: utf-8

@@ -56,3 +56,5 @@ dnf
 utils
 remi
 fc
+UI
+opendyslexic
