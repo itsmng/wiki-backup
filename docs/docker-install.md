@@ -1,47 +1,21 @@
 # Introduction
 Thank you for downloading the ITSM-NG docker setup !
 
-# Create and config the Docker-Compose config
-
-Create docker-compose.yml file and add content
-
+# Installation
 ```
-version: '3'
-services:
-  itsmweb :
-    image : itsm-ng
-    depends_on:
-      - itsmdb
-    container_name : itsmweb
-    restart: always
-    ports :
-      - "80:80"
-    volumes :
-      - ./itsmng-config:/var/www/itsm-ng/config
-      - ./itsmng-plugins:/var/www/itsm-ng/plugins
-      - ./itsmng-files:/var/www/itsm-ng/files
-    environment:
-      MARIADB_USER : itsmng
-      MARIADB_PASSWORD : itsmng
-      MARIADB_DATABASE : itsmng
-  itsmdb :
-    image: mariadb
-    container_name: itsmdb
-    command: --default-authentication-plugin=mysql_native_password
-    restart: always
-    volumes :
-      - ../itsmdata:/var/lib/mysql
-    environment:
-      MARIADB_AUTO_UPGRADE: "yes"
-      MARIADB_ALLOW_EMPTY_ROOT_PASSWORD: "yes"
-      MARIADB_USER : itsmng
-      MARIADB_PASSWORD : itsmng
-      MARIADB_DATABASE : itsmng
-    healthcheck:
-      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost", "-u", "root", "-p$MYSQL_ROOT_PASSWORD"]
-      timeout: 20s
-      retries: 10
+git clone https://github.com/itsmng/itsmng-docker
+cd itsmng-docker
 ```
+To chose your version you go simply on the directory version exemple 1.4 directory or latest for the last version.
+```
+cd latest
+```
+
+Start the container
+```
+docker-compose up -d
+```
+You ITSM-NG is available on the address http://localhost
 
 # Securize your Installation
 By default in this exemple the MariaDB user,password and datase is itsmng. To change this setting you can edit the ***MARIADB_USER,MARIADB_PASSWORD*** and the ***MARIADB_DATABASE*** variable.
