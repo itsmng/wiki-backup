@@ -11,25 +11,24 @@ To chose your version you go simply on the directory version exemple 1.4 directo
 cd latest
 ```
 
-Start the container
+## Securize your Installation
+By default in this exemple the MariaDB user,password and datase is itsmng. To change this setting you can edit the ***MARIADB_USER,MARIADB_PASSWORD*** and the ***MARIADB_DATABASE*** variable.
+
+## Start the container
 ```
 docker-compose up -d
 ```
+![Docker Compose UP](img/docker-compose-up.png)
+
 You ITSM-NG is available on the address http://localhost
 
-# Securize your Installation
-By default in this exemple the MariaDB user,password and datase is itsmng. To change this setting you can edit the ***MARIADB_USER,MARIADB_PASSWORD*** and the ***MARIADB_DATABASE*** variable.
-
-# Launch the container
-Now you can launch the container with this command
-
+## Check if container is Running
 ```
-docker-compose up
+docker container ls -a
 ```
+![Docker Container LS](img/docker-container-ls.png)
 
-Docker-Compose is automatically download the images of MariaDB and ITSM-NG. And then launch the MariaDB and ITSM-NG container, and launch the installation of ITSM-NG
-
-Now ITSM-NG is completely install
+If the container is running the status is "UP"
 
 # What files need to be backup 
 The docker volume created need to be backup to not lose your data
