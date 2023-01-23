@@ -44,7 +44,7 @@ services:
 ```
 
 # Securize your Installation
-By default in this exemple the MariaDB user,password and datase is itsmng. To change this setting you can edit the MARIADB_USER,MARIADB_PASSWORD and the MARIADB_DATABASE variable.
+By default in this exemple the MariaDB user,password and datase is itsmng. To change this setting you can edit the ***MARIADB_USER,MARIADB_PASSWORD*** and the ***MARIADB_DATABASE*** variable.
 
 # Launch the container
 Now you can launch the container with this command
