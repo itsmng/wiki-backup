@@ -45,7 +45,7 @@ docker container logs itsmweb
 
 
 # What files need to be backup 
-The docker volume created need to be backup to not lose your data
+The docker volumes created must be backup to avoid losing your data.
 
 | Volumes        | Description                                                                   |
 |----------------|-------------------------------------------------------------------------------|
