@@ -8,8 +8,8 @@
 * The number of ticket with resolution time exceeding
 * The number of ticket with time of care exceeded
 ## Assets
-* a pie chart to view the computer per location/status/types and by manufacture.
-* a pie chart to view the network equipement per manufacture.
+* a pie chart to view the computer per location/status/types and by manufacturer.
+* a pie chart to view the network equipement per manufacturer.
 * The number of network equipement
 * The percentage of computer in warranty
 ## Financial management
