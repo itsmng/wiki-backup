@@ -55,3 +55,21 @@ The docker volumes created must be backup to avoid losing your data.
 | itsmdata       | He contain all of the files of MariaDB.                                       |
 
 This volume is a folder in your docker-compose directory.
+
+# How to update ITSM-NG
+* Go the current install version oif itsm
+```
+cd 1.3.0
+```
+* Stop the container
+```
+docker-compose down
+```
+* Go to the new version
+```
+cd ../1.4.0
+```
+* Start the container
+```
+docker-compose up -d
+```
