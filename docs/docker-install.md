@@ -57,7 +57,7 @@ The docker volumes created must be backup to avoid losing your data.
 This volume is a folder in your docker-compose directory.
 
 # How to update ITSM-NG
-* Go the current install version oif itsm
+* Go the current install version of itsm
 ```
 cd 1.3.0
 ```
