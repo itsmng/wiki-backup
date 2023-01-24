@@ -6,13 +6,13 @@ Thank you for downloading the ITSM-NG docker setup !
 git clone https://github.com/itsmng/itsmng-docker
 cd itsmng-docker
 ```
-To choose your version you simply go to the directory of the chosen version for example the folder 1.4 for version 1.4 or latest for the last version.
+To choose your version, you simply go to the directory of the chosen version for example the folder 1.4 for version 1.4 or latest for the last version.
 ```
 cd latest
 ```
 
 ## Securize your Installation
-By default in this exemple the MariaDB user,password and datase is itsmng. To change this setting you can edit the ***MARIADB_USER,MARIADB_PASSWORD*** and the ***MARIADB_DATABASE*** variable.
+By default in this example the MariaDB user,password and datase is itsmng. To change this setting you can edit the ***MARIADB_USER,MARIADB_PASSWORD*** and the ***MARIADB_DATABASE*** variable.
 
 ## Start the container
 ```
@@ -22,13 +22,13 @@ docker-compose up -d
 
 You ITSM-NG is available on the address http://localhost
 
-## Check if container is Running
+## Check if the container is Running.
 ```
 docker container ls -a
 ```
 ![Docker Container LS](img/docker-container-ls.png)
 
-If the container is running the status is "UP"
+If the container is running, the status is "UP".
 
 # View the logs
 ## For MariaDB
@@ -47,12 +47,12 @@ docker container logs itsmweb
 # What files need to be backup 
 The docker volumes created must be backup to avoid losing your data.
 
-| Volumes        | Description                                                                   |
-|----------------|-------------------------------------------------------------------------------|
-| itsmng-config  | He contain the database Information, the name and the login of MySQL database |
-| itsmng-plugins | He contain all of the ITSM-NG plugins files                                   |
-| itsmng-files   | He contain all of the attachments, and profile picture                        |
-| itsmdata       | He contain all of the files of MariaDB.                                       |
+| Volumes        | Description                                                                               |
+|----------------|-------------------------------------------------------------------------------------------|
+| itsmng-config  | The directory contains the database Information, the name and the login of MySQL database |
+| itsmng-plugins | The directory contains all of the ITSM-NG plugins files                                   |
+| itsmng-files   | The directory contains of the attachments, and profile picture                            |
+| itsmdata       | The directory contains of the files of MariaDB.                                           |
 
 This volume is a folder in your docker-compose directory.
 
