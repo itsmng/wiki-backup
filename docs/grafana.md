@@ -1,13 +1,17 @@
 # The component of the Dashboard
 ## Ticketing
 * a graph a opening tickets per days
+  ![Screenshot tickets per days](img/grafana/tickets-per-days.png)
+
 * a graph a tickets processed late per days
 * and a pie chart to view the tickets by location, category and by user group
 * The number of ticket with resolution time exceeding
 * The number of ticket with time of care exceeded
 ## Assets
-*
+* a pie chart to view the computer per location/status/types and by manufacture.
+* a pie chart to view the network equipement per manufacture.
 * The number of network equipement
+* The percentage of computer in warranty
 ## Financial management
 
 # Installation
