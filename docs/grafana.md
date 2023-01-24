@@ -6,6 +6,8 @@
 * The number of ticket with resolution time exceeding
 * The number of ticket with time of care exceeded
 ## Assets
+*
+* The number of network equipement
 ## Financial management
 
 # Installation
