@@ -16,7 +16,7 @@
 * The sum of the different budgets
 * a pie chart to view the percent of computer per provider
 * The amortization period
-* The total costs per budget
+* The total costs of budget
 * The network equipement per provider
 
 # Installation
