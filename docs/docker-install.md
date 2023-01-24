@@ -30,6 +30,20 @@ docker container ls -a
 
 If the container is running the status is "UP"
 
+# View the logs
+## For MariaDB
+```
+docker container logs itsmdb
+```
+![Example  of MariaDB LOGS](img/example-itsmdb-logs.png)
+
+## For ITSM-NG
+```
+docker container logs itsmweb
+```
+![Example of ITSM-NG LOGS](img/example-itsmweb-logs.png)
+
+
 # What files need to be backup 
 The docker volume created need to be backup to not lose your data
 
