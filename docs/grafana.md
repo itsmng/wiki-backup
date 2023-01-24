@@ -13,6 +13,11 @@
 * The number of network equipement
 * The percentage of computer in warranty
 ## Financial management
+* The sum of the different budgets
+* a pie chart to view the percent of computer per provider
+* The amortization period
+* The total costs per budget
+* The network equipement per provider
 
 # Installation
 ## Enable the ITSM-NG API
