@@ -18,7 +18,7 @@ By default, in this example, the MariaDB user,password and database is itsmng. T
 ```
 docker-compose up -d
 ```
-![Docker Compose UP](img/docker-compose-up.png)
+![Docker Compose UP](img/docker/docker-compose-up.png)
 
 You ITSM-NG is available on the address http://localhost
 
@@ -26,7 +26,7 @@ You ITSM-NG is available on the address http://localhost
 ```
 docker container ls -a
 ```
-![Docker Container LS](img/docker-container-ls.png)
+![Docker Container LS](img/docker/docker-container-ls.png)
 
 If the container is running, the status is "UP".
 
@@ -35,13 +35,13 @@ If the container is running, the status is "UP".
 ```
 docker container logs itsmdb
 ```
-![Example  of MariaDB LOGS](img/example-itsmdb-logs.png)
+![Example  of MariaDB LOGS](img/docker/example-itsmdb-logs.png)
 
 ## For ITSM-NG
 ```
 docker container logs itsmweb
 ```
-![Example of ITSM-NG LOGS](img/example-itsmweb-logs.png)
+![Example of ITSM-NG LOGS](img/docker/example-itsmweb-logs.png)
 
 
 # What files need to be backup 
