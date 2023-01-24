@@ -6,7 +6,7 @@ Thank you for downloading the ITSM-NG docker setup !
 git clone https://github.com/itsmng/itsmng-docker
 cd itsmng-docker
 ```
-To chose your version you go simply on the directory version exemple 1.4 directory or latest for the last version.
+To choose your version you simply go to the directory of the chosen version for example the folder 1.4 for version 1.4 or latest for the last version.
 ```
 cd latest
 ```
