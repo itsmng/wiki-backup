@@ -2,7 +2,6 @@
 ## Ticketing
 * a graph a opening tickets per days
   ![Screenshot tickets per days](img/grafana/tickets-per-days.png)
-
 * a graph a tickets processed late per days
 * and a pie chart to view the tickets by location, category and by user group
 * The number of ticket with resolution time exceeding
@@ -17,6 +16,9 @@
 * a pie chart to view the percent of computer per provider
 * The amortization period
 * The total costs of budget
+
+  ![Screenshot total of budget](img/grafana/total-budget.png)
+
 * The network equipement per provider
 
 # Installation
