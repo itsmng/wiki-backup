@@ -1,3 +1,13 @@
+# The component of the Dashboard
+## Ticketing
+* a graph a opening tickets per days
+* a graph a tickets processed late per days
+* and a pie chart to view the tickets by location, category and by user group
+* The number of ticket with resolution time exceeding
+* The number of ticket with time of care exceeded
+## Assets
+## Financial management
+
 # Installation
 ## Enable the ITSM-NG API
 * Go to Setup -> General and in the API section set Enable Rest API	to YES," Enable login with credentials" and "Enable login with external token " to YES.
