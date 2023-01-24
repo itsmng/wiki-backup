@@ -6,13 +6,13 @@ Thank you for downloading the ITSM-NG docker setup !
 git clone https://github.com/itsmng/itsmng-docker
 cd itsmng-docker
 ```
-To choose your version, you simply go to the directory of the chosen version for example the folder 1.4 for version 1.4 or latest for the last version.
+To choose your version, you simply go to the directory of the chosen version, for example the folder 1.4 for version 1.4 or latest for the last version.
 ```
 cd latest
 ```
 
-## Securize your Installation
-By default in this example the MariaDB user,password and datase is itsmng. To change this setting you can edit the ***MARIADB_USER,MARIADB_PASSWORD*** and the ***MARIADB_DATABASE*** variable.
+## Secure your Installation
+By default, in this example, the MariaDB user,password and database is itsmng. To change this setting you can edit the ***MARIADB_USER,MARIADB_PASSWORD*** and the ***MARIADB_DATABASE*** variable.
 
 ## Start the container
 ```
@@ -50,14 +50,14 @@ The docker volumes created must be backup to avoid losing your data.
 | Volumes        | Description                                                                               |
 |----------------|-------------------------------------------------------------------------------------------|
 | itsmng-config  | The directory contains the database Information, the name and the login of MySQL database |
-| itsmng-plugins | The directory contains all of the ITSM-NG plugins files                                   |
+| itsmng-plugins | The directory contains all the ITSM-NG plugins files                                   |
 | itsmng-files   | The directory contains of the attachments, and profile picture                            |
 | itsmdata       | The directory contains of the files of MariaDB.                                           |
 
 This volume is a folder in your docker-compose directory.
 
 # How to update ITSM-NG
-* Go the current install version of itsm
+* Go to the current installation version of itsm
 ```
 cd 1.3.0
 ```
