@@ -1,8 +1,8 @@
 # The component of the Dashboard
 ## Ticketing
-* a graph a opening tickets per days
+* a graph of opening tickets per days
   ![Screenshot tickets per days](img/grafana/tickets-per-days.png)
-* a graph a tickets processed late per days
+* a graph of tickets processed late per days
 * and a pie chart to view the tickets by location, category and by user group
 * The number of ticket with resolution time exceeding
 * The number of ticket with time of care exceeded
