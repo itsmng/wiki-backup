@@ -8,8 +8,8 @@
 * The number of ticket with time of care exceeded
 ## Assets
 * a pie chart to view the computer per location/status/types and by manufacturer.
-* a pie chart to view the network equipement per manufacturer.
-* The number of network equipement
+* a pie chart to view the network equipment per manufacturer.
+* The number of network equipment
 * The percentage of computer in warranty
 ## Financial management
 * The sum of the different budgets
@@ -19,7 +19,7 @@
 
   ![Screenshot total of budget](img/grafana/total-budget.png)
 
-* The network equipement per provider
+* The network equipment per provider
 
 ![Screenshot total of budget](img/grafana/Dashboards-Grafana-Full.png)
 
