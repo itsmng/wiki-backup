@@ -16,7 +16,7 @@ docker build -t itsm-ng:1.3.0 .
 ```
 The syntaxe is ***docker build -t NameOfTheImage:Version***
 
-![Docker Build Image](docs/img/docker-build/image-build.png)
+![Docker Build Image](img/docker-build/image-build.png)
 
 If this command return  ***"Successfully tagged NameOfTheImage:Version"*** your build is working.
 
@@ -24,4 +24,4 @@ You can also view your image with the command
 ```
 docker image ls
 ```
-![Docker Image LS](docs/img/docker-build/image-ls.png)
+![Docker Image LS](img/docker-build/image-ls.png)
