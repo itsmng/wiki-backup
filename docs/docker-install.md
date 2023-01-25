@@ -52,7 +52,7 @@ The docker volumes created must be backup to avoid losing your data.
 | itsmng-config  | The directory contains the database Information, the name and the login of MySQL database |
 | itsmng-plugins | The directory contains all the ITSM-NG plugins files                                   |
 | itsmng-files   | The directory contains of the attachments, and profile picture                            |
-| itsmdata       | The directory contains of the files of MariaDB.                                           |
+| itsmng-data    | The directory contains of the files of MariaDB.                                           |
 
 This volume is a folder in your docker-compose directory.
 
