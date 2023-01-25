@@ -28,7 +28,7 @@ Go to the following link for more information [https://opendyslexic.org/](https:
 
 Allow access to the accessibility feature in `Profiles`.
 
-![allow profil permissions](img/accessibility/allow_profil_permissions.png)
+![allow profil permissions](../img/accessibility/allow_profil_permissions.png)
 
 ## How to setup accessibility
 
@@ -40,11 +40,11 @@ Here you can change the `UI Font` and the `UI Scale`.
 
 You can also `Enable/Disable` shortcuts.
 
-![setup accessibility for myself](img/accessibility/setup_accessibility.png)
+![setup accessibility for myself](../img/accessibility/setup_accessibility.png)
 
 To set shortcuts, _toggle_ the view, click on the shortcut you want to change and set the key combination with your keyboard. Click on `Update`. 
 
-![set shortcuts](img/accessibility/set_shortcut.png)
+![set shortcuts](../img/accessibility/set_shortcut.png)
 
 Don't forget to click on `Save` at the bottom of the form.
 
@@ -57,4 +57,4 @@ Go to `Accessibility` tab.
 
 Here you can change the `UI Font`, the `UI Scale` and `Enable/Disable` shortcuts.
 
-![setup accessibility for another user](img/accessibility/setup_accessibility_for_other.png)
+![setup accessibility for another user](../img/accessibility/setup_accessibility_for_other.png)
