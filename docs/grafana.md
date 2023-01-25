@@ -21,6 +21,8 @@
 
 * The network equipement per provider
 
+![Screenshot total of budget](img/grafana/Dashboards-Grafana-Full.png)
+
 # Installation
 ## Enable the ITSM-NG API
 * Go to Setup -> General and in the API section set Enable Rest API	to YES," Enable login with credentials" and "Enable login with external token " to YES.
@@ -34,6 +36,7 @@
 ## Setup the User Token
 * Go to your profile settings et generate the API Token
 
+# Screenshot of the Dashboard
 ![user-api.png](img/grafana/user-api.png)
 
 ## Grafana Configuration
