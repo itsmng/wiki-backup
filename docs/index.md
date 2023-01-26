@@ -10,6 +10,7 @@ ITSM-NG is a GLPI fork with the objective of offering a strong community compone
 * [Installation using docker](docker-install.md)
 * [Installation using official repository](repo-install.md)
 * [Update ITSM-NG or migrate from GLPI](update.md)
+* [Post installation](post-install.md)
 
 ## Using / configuring ITSM-NG features
 
@@ -19,8 +20,8 @@ ITSM-NG is a GLPI fork with the objective of offering a strong community compone
 
 ## Third party apps
 
-* [Android tech app (in construction)](android-app.md)
-* [Grafana dashboard (in construction)](grafana.md)
+* [Android application (in construction)](third-party/android-app.md)
+* [Grafana dashboard (in construction)](third-party/grafana.md)
 
 ## Plugins
 
