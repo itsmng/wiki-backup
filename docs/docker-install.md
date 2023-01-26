@@ -1,75 +1,110 @@
-# Introduction
-Thank you for downloading the ITSM-NG docker setup !
+# ITSM-NG docker installation
 
-# Installation
-```
-git clone https://github.com/itsmng/itsmng-docker
-cd itsmng-docker
-```
-To choose your version, you simply go to the directory of the chosen version, for example the folder 1.4 for version 1.4 or latest for the last version.
-```
-cd latest
-```
+## Introduction
 
-## Secure your Installation
-By default, in this example, the MariaDB user,password and database is itsmng. To change this setting you can edit the ***MARIADB_USER,MARIADB_PASSWORD*** and the ***MARIADB_DATABASE*** variable.
+ITSM-NG dev team provide a docker image in order to install our product without having to manage dependencies and basic configuration.
+We'll review how to setup and maintain the ITSM-NG application via docker.
 
-## Start the container
-```
-docker-compose up -d
-```
-![Docker Compose UP](img/docker/docker-compose-up.png)
+## List of all image tags
 
-You ITSM-NG is available on the address http://localhost
+| Tag    | Description                         | Images                     | Usage      |
+|--------|-------------------------------------|----------------------------|------------|
+| 1.3.0  | Stable ITSM-NG version              | Alpine 3.17 / MariaDB 10.6 | Production |
+| 1.4.0  | Stable ITSM-NG version              | Alpine 3.17 / MariaDB 10.6 | Production |
+| latest | Use the last stable ITSM-NG version | Alpine 3.17 / MariaDB 10.6 | Production |
 
-## Check if the container is Running.
-```
-docker container ls -a
-```
-![Docker Container LS](img/docker/docker-container-ls.png)
+## Pull image from docker hub
 
-If the container is running, the status is "UP".
+To pull the latest ITSM-NG image, launch the following command :
 
-# View the logs
-## For MariaDB
-```
-docker container logs itsmdb
-```
-![Example  of MariaDB LOGS](img/docker/example-itsmdb-logs.png)
+    docker pull itsm-ng/itsmng:latest
 
-## For ITSM-NG
-```
-docker container logs itsmweb
-```
-![Example of ITSM-NG LOGS](img/docker/example-itsmweb-logs.png)
+To pull a specific version replace `latest` by the desired version.
 
+    docker pull itsm-ng/itsmng:1.3.0
 
-# What files need to be backup 
-The docker volumes created must be backup to avoid losing your data.
+## Pull image from sources and build it locally
 
-| Volumes        | Description                                                                               |
-|----------------|-------------------------------------------------------------------------------------------|
-| itsmng-config  | The directory contains the database Information, the name and the login of MySQL database |
-| itsmng-plugins | The directory contains all the ITSM-NG plugins files                                   |
-| itsmng-files   | The directory contains of the attachments, and profile picture                            |
-| itsmng-data    | The directory contains of the files of MariaDB.                                           |
+To build the image locally pull the git repository :
 
-This volume is a folder in your docker-compose directory.
+    git clone https://github.com/itsmng/itsmng-docker
 
-# How to update ITSM-NG
-* Go to the current installation version of itsm
-```
-cd 1.3.0
-```
-* Stop the container
-```
-docker-compose down
-```
-* Go to the new version
-```
-cd ../1.4.0
-```
-* Start the container
-```
-docker-compose up -d
-```
+Docker build command :
+
+    docker build --rm -f "MY_TAG/Dockerfile" -t itsm-ng/itsmng:MY_TAG "MY_TAG"
+
+## Run ITSM-NG using docker
+
+We have a docker-compose example in every folder for each tag of our image.
+
+To get these examples / templates, clone our git repository :
+
+    git clone https://github.com/itsmng/itsmng-docker
+    cd itsmng-docker/latest
+
+If you want a specific version replace `latest` by the desired version.
+
+### Secure the installation
+
+By default, the MariaDB user, password and database are set as `itsmng`.
+To update these settings, edit the `docker-compose.yml` and change the following settings :
+
+* MARIADB_USER
+* MARIADB_PASSWORD
+* MARIADB_DATABASE
+
+`Note: these settings are set in the itsmweb and itsmdb container parts.`
+
+### Start the container
+
+To start the ITSM-NG application container, run the following command :
+
+    docker-compose up -d
+
+You can check if the containers is running correctly with the next command :
+
+    docker container ls -a
+
+The container status is `Up` if it works.
+
+Now, your ITSM-NG application is available at the following address [http://localhost](http://localhost).
+
+### Volumes information
+
+Below you will find the volumes list created by ITSM-NG docker application and their description :
+
+| Volume           | Description                                                                      |
+|------------------|----------------------------------------------------------------------------------|
+| `itsmng-config`  | It contains the `itsm-ng/config` directory                                       |
+| `itsmng-plugins` | It contains the `itsm-ng/plugins` directory                                      |
+| `itsmng-files`   | It contains the `itsm-ng/files` directory (application logs, cache, attachments) |
+| `itsmng-data`    | It contains the MariaDB instance datas                                           |
+
+`Note: these volumes are created directly in your docker-compose directory.`
+
+## Update ITSM-NG docker instance
+
+To update your application to the newest version, go to the current running instance folder and run the following command :
+
+    docker-compose down
+
+Retrieve the latest `itsmng-docker` updates with the `pull` command :
+
+    git pull origin main
+
+Edit the `docker-compose.yml` with your custom settings and run :
+
+    docker-compose up -d
+
+## View logs
+
+You can check the containers logs with the two following commands :
+
+For ITSM-NG application container :
+
+    docker container logs itsmweb
+
+For MariaDB container :
+
+    docker container logs itsmdb
+
