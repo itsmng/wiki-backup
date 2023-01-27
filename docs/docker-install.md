@@ -96,6 +96,12 @@ Edit the `docker-compose.yml` with your custom settings and run :
 
     docker-compose up -d
 
+## Crontab implementation
+
+To implement a crontab outside of the container, you can configure it directly on your server following the example below :
+
+    0 0 * * * root docker exec <your_container_name> bash -c 'cd /var/www/itsm-ng && php front/cron.php'
+
 ## View logs
 
 You can check the containers logs with the two following commands :
