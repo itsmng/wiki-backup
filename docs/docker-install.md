@@ -7,11 +7,11 @@ We'll review how to setup and maintain the ITSM-NG application via docker.
 
 ## List of all image tags
 
-| Tag    | Description                         | Images                     | Usage      |
-|--------|-------------------------------------|----------------------------|------------|
-| 1.3.0  | Stable ITSM-NG version              | Alpine 3.17 / MariaDB 10.6 | Production |
-| 1.4.0  | Stable ITSM-NG version              | Alpine 3.17 / MariaDB 10.6 | Production |
-| latest | Use the last stable ITSM-NG version | Alpine 3.17 / MariaDB 10.6 | Production |
+| Tag    | Description                         | Images                         | Usage      |
+|--------|-------------------------------------|--------------------------------|------------|
+| 1.3.0  | Stable ITSM-NG version              | Debian Bookworm / MariaDB 10.6 | Production |
+| 1.4.0  | Stable ITSM-NG version              | Debian Bookworm / MariaDB 10.6 | Production |
+| latest | Use the last stable ITSM-NG version | Debian Bookworm / MariaDB 10.6 | Production |
 
 ## Pull image from docker hub
 
@@ -35,6 +35,29 @@ Docker build command :
 
 ## Run ITSM-NG using docker
 
+You currently have two options : 
+
+* Run the image alone using `docker run`.
+* Run the image along with a MariaDB server using `docker-compose`.
+
+### ITSM-NG image without MariaDB
+
+ITSM-NG image doesn't come with MariaDB instance, if you want one, please check the documentation below (docker-compose)
+
+To run an ITSM-NG instance with the most basics settings, you can use the following command 
+
+    docker run \
+    --name [MY_CONTAINER_NAME] \
+    -e MARIADB_HOST=[DB_HOST] \
+    -e MARIADB_DATABASE=[DB_NAME] \
+    -e MARIAD_USER=[DB_USER] \
+    -e MARIADB_PASSWORD=[DB_PASSWORD] \
+    -idt itsm-ng/itsmng:MY_TAG
+
+See `List of all image tags` for more informations.
+
+### ITSM-NG image with MariaDB
+
 We have a docker-compose example in every folder for each tag of our image.
 
 To get these examples / templates, clone our git repository :
@@ -44,7 +67,9 @@ To get these examples / templates, clone our git repository :
 
 If you want a specific version replace `latest` by the desired version.
 
-### Secure the installation
+`Note: in production environment, we recommend to use a specific tag and not the latest tag in order to avoid any unwanted upgrade process upon container restart`
+
+#### Secure the installation
 
 By default, the MariaDB user, password and database are set as `itsmng`.
 To update these settings, edit the `docker-compose.yml` and change the following settings :
@@ -55,13 +80,17 @@ To update these settings, edit the `docker-compose.yml` and change the following
 
 `Note: these settings are set in the itsmweb and itsmdb container parts.`
 
-### Start the container
+#### Start the stack
 
-To start the ITSM-NG application container, run the following command :
+To start the ITSM-NG application stack, run the following command :
 
     docker-compose up -d
 
-You can check if the containers is running correctly with the next command :
+By default, volume names use the current version as a prefix (i.e. 1.3.0 => 130_volumename). You can set a custom prefix with the next command :
+
+    docker-compose -p MY_PREFIX up -d
+
+You can check if containers are running correctly with the next command :
 
     docker container ls -a
 
@@ -69,20 +98,40 @@ The container status is `Up` if it works.
 
 Now, your ITSM-NG application is available at the following address [http://localhost](http://localhost).
 
-### Volumes information
+#### Volumes information
 
 Below you will find the volumes list created by ITSM-NG docker application and their description :
 
-| Volume           | Description                                                                      |
-|------------------|----------------------------------------------------------------------------------|
-| `itsmng-config`  | It contains the `itsm-ng/config` directory                                       |
-| `itsmng-plugins` | It contains the `itsm-ng/plugins` directory                                      |
-| `itsmng-files`   | It contains the `itsm-ng/files` directory (application logs, cache, attachments) |
-| `itsmng-data`    | It contains the MariaDB instance datas                                           |
-
-`Note: these volumes are created directly in your docker-compose directory.`
+| Volume           | Description                                                      |
+|------------------|------------------------------------------------------------------|
+| `itsmng-config`  | It contains the application configuration                        |
+| `itsmng-plugins` | It contains the application plugins                              |
+| `itsmng-files`   | It contains the application extra data (logs, cache, attachment) |
+| `itsmng-data`    | It contains the MariaDB instance data                            |
 
 ## Update ITSM-NG docker instance
+
+### Update ITSM-NG whitout MariaDB (docker run)
+
+In the case of `docker run`, to update to the newest version run the following command :
+
+    docker stop
+
+Retrieve the latest ITSM-NG image with the `pull` command :
+
+    docker pull itsm-ng/itsmng:MY_TAG
+
+Then, restart your container :
+
+    docker run \
+    --name [MY_CONTAINER_NAME] \
+    -e MARIADB_HOST=[DB_HOST] \
+    -e MARIADB_DATABASE=[DB_NAME] \
+    -e MARIAD_USER=[DB_USER] \
+    -e MARIADB_PASSWORD=[DB_PASSWORD] \
+    -idt itsm-ng/itsmng:MY_TAG
+
+### Update ITSM-NG with MariaDB (docker-compose)
 
 To update your application to the newest version, go to the current running instance folder and run the following command :
 
@@ -96,11 +145,19 @@ Edit the `docker-compose.yml` with your custom settings and run :
 
     docker-compose up -d
 
+By default, volume names use the current version as a prefix (i.e. 1.3.0 => 130_volumename). 
+
+You can set a custom prefix with the next command :
+
+    docker-compose -p MY_PREFIX up -d
+
+`Note: in the case you don't use custom prefix, don't forget to rename your old volumes with the new prefix version. You can also use docker cp command to copy old volumes data in the new volumes.`
+
 ## Crontab implementation
 
 To implement a crontab outside of the container, you can configure it directly on your server following the example below :
 
-    0 0 * * * root docker exec <your_container_name> bash -c 'cd /var/www/itsm-ng && php front/cron.php'
+    0 0 * * * root docker exec `itsmng_web` bash -c 'cd /var/www/itsm-ng && php front/cron.php'
 
 ## View logs
 
@@ -113,4 +170,8 @@ For ITSM-NG application container :
 For MariaDB container :
 
     docker container logs itsmdb
+
+When using `docker-compose` : 
+
+    docker-compose logs -f 
 
