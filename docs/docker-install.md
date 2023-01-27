@@ -96,7 +96,7 @@ You can check if containers are running correctly with the next command :
 
 The container status is `Up` if it works.
 
-Now, your ITSM-NG application is available at the following address [http://localhost](http://localhost).
+Now, your ITSM-NG application is available at the following address [http://localhost:8080](http://localhost:8080).
 
 #### Volumes information
 
