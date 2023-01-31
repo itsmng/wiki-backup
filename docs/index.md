@@ -17,12 +17,11 @@ ITSM-NG is a GLPI fork with the objective of offering a strong community compone
 * [OpenID Connect](features/oidc.md)
 * [Accessibility](features/accessibility.md)
 * [Chat notification](features/chat-notification.md)
-* [Grafana dashboard](features/grafana.md)
 
 ## Third party apps
 
 * [Android application (in construction)](third-party/android-app.md)
-* [Grafana dashboard (in construction)](third-party/grafana.md)
+* [Grafana dashboard](third-party/grafana.md)
 
 ## Plugins
 
