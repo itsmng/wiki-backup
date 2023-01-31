@@ -10,19 +10,26 @@ ITSM-NG is a GLPI fork with the objective of offering a strong community compone
 * [Installation using docker](docker-install.md)
 * [Installation using official repository](repo-install.md)
 * [Update ITSM-NG or migrate from GLPI](update.md)
+* [Post installation](post-install.md)
 
 ## Using / configuring ITSM-NG features
 
-* [OpenID Connect](oidc.md)
-* [Accessibility](accessibility.md)
-* [Grafana dashboard](grafana.md)
+* [OpenID Connect](features/oidc.md)
+* [Accessibility](features/accessibility.md)
+* [Chat notification](features/chat-notification.md)
+* [Grafana dashboard](features/grafana.md)
 
-## Plugins and third party apps
+## Third party apps
 
-* [White Label (in construction)](whitelabel-plugin.md)
-* [Edit Translations (in construction)](edittranslation-plugin.md)
-* [Holidays (in construction)](holidays-plugin.md)
-* [Android tech app (in construction)](android-app.md)
+* [Android application (in construction)](third-party/android-app.md)
+* [Grafana dashboard (in construction)](third-party/grafana.md)
+
+## Plugins
+
+* [White Label](plugins/whitelabel-plugin.md)
+* [Edit Translations](plugins/edittranslation-plugin.md)
+* [Holidays](plugins/holidays-plugin.md)
+* [Split dropdown](plugins/splitdropdown-plugin.md)
 
 ## Useful links
 

@@ -2,11 +2,11 @@
 
 `Note: before each update, it is recommended to make a backup of the data as well as to test first on a development infrastructure in order to validate the integrity of the data.`
 
-`WARNING` : it is not possible to migrate GLPI 10 to ITSM-NG.
+**WARNING : it is not possible to migrate GLPI 10 to ITSM-NG.**
 
 ## Update or migrate
 
-Download the latest version of ITSM-NG at the following link : https://github.com/itsmng/itsm-ng/releases
+Download the latest version of ITSM-NG at the following link : [https://github.com/itsmng/itsm-ng/releases](https://github.com/itsmng/itsm-ng/releases)
 
 Uncompress the release in the same directory as the currently installed version.
 

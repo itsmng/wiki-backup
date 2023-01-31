@@ -2,14 +2,18 @@
 
 ## Prerequisites
 
-To allow the installation of ITSM-NG, it is necessary to have a Linux or Windows server with the following services installed and configured :  
+To allow the installation of ITSM-NG, it is necessary to have a Linux or Windows server with the following services installed and configured : 
+
 * Apache, Nginx, ISS, etc
 * MariaDB >= 10.X or MySQL >= 5.7
 * PHP 7.2 or newer
 
-`Note on PHP : version 7.4 is still recommended as PHP 7.2 and 7.3 are compatible with the product but are no longer supported by PHP (See `https://www.php.net/supported-versions.php` for more informations).`
+`Note on PHP : version 8.X is recommended as PHP 7.X is no longer supported by PHP.`
 
-Here is the list of *required* PHP extensions for ITSM-NG : 
+See [https://www.php.net/supported-versions.php](https://www.php.net/supported-versions.php) for more informations.
+
+Here is the list of **required** PHP extensions for ITSM-NG : 
+
 * php-ctype
 * php-curl
 * php-gd
@@ -22,6 +26,7 @@ Here is the list of *required* PHP extensions for ITSM-NG :
 * php-zlib
 
 The following PHP extensions are optional : 
+
 * php-exif 
 * php-imap
 * php-ldap
@@ -33,7 +38,7 @@ The following PHP extensions are optional :
 
 ## Download 
 
-Download the version of your choice at the following link : https://github.com/itsmng/itsm-ng/releases
+Download the version of your choice at the following link : [https://github.com/itsmng/itsm-ng/releases](https://github.com/itsmng/itsm-ng/releases)
 
 However, we recommend using the latest version available.
 
@@ -60,7 +65,7 @@ There are two ways to install ITSM-NG :
 
 ## Web installation
 
-Go to http://localhost/itsm-ng and follow the next steps.
+Go to [http://localhost/itsm-ng](http://localhost/itsm-ng) and follow the next steps.
 
 ![Choose default language](img/installation/setup_choose_language.png)
 
@@ -169,6 +174,6 @@ Result :
     Do you want to continue ? [Yes/no] yes
     Installation done.
 
-Now, you can connect to ITSM-NG at http://localhost/itsm-ng with the default user itsm/itsm.
+Now, you can connect to ITSM-NG at [http://localhost/itsm-ng](http://localhost/itsm-ng) with the default user itsm/itsm.
 
 Enjoy ITSM-NG :-)

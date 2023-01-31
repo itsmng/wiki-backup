@@ -2,10 +2,12 @@ site_name: ITSM-NG Wiki
 site_url: https://wiki.itsm-ng.org/
 repo_url: https://github.com/itsmng/wiki
 theme:
-  name: null
-  custom_dir: 'cinder'
+  name: material
+  logo: assets/itsmng-w.png
+  favicon: assets/favicon.ico
 nav:
   - 'Accueil': 'index.md'
   - 'Installation': 'install.md'
   - 'Bugtracker': 'https://github.com/itsmng/itsm-ng/issues'
   - 'En savoir plus': 'https://www.itsm-ng.com/'
+extra_css: [assets/extra.css]
