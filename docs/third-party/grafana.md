@@ -26,7 +26,7 @@ To allow a user to connect to the API, there are two options :
 
 ![](../img/grafana/grafana_api_configuration.png)
 
-Next, you need to configure an `API client` to allow your grafana server to issue API calls to your ITSM-NG application.
+Next, you need to configure an `API client` to allow your Grafana server to issue API calls to your ITSM-NG application.
 
 Click on `Add API client`.
 

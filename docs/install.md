@@ -10,7 +10,7 @@ To allow the installation of ITSM-NG, it is necessary to have a Linux or Windows
 
 `Note on PHP : version 8.X is recommended as PHP 7.X is no longer supported by PHP.`
 
-See [https://www.php.net/supported-versions.php](https://www.php.net/supported-versions.php) for more informations.
+See [https://www.php.net/supported-versions.php](https://www.php.net/supported-versions.php) for more information.
 
 Here is the list of **required** PHP extensions for ITSM-NG : 
 

@@ -54,7 +54,7 @@ To run an ITSM-NG instance with the most basics settings, you can use the follow
     -e MARIADB_PASSWORD=[DB_PASSWORD] \
     -idt itsmng/itsm-ng:MY_TAG
 
-See `List of all image tags` for more informations.
+See `List of all image tags` for more information.
 
 ### ITSM-NG image with MariaDB
 
@@ -111,7 +111,7 @@ Below you will find the volumes list created by ITSM-NG docker application and t
 
 ## Update ITSM-NG docker instance
 
-### Update ITSM-NG whitout MariaDB (docker run)
+### Update ITSM-NG without MariaDB (docker run)
 
 In the case of `docker run`, to update to the newest version run the following command :
 

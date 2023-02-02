@@ -4,7 +4,7 @@ This plugin allows you to edit translation file directly in the web interface.
 
 ## Installation
 
-Installing this plugin is done following the standard process for itsm plugins, simply clone [the git repository](https://github.com/itsmng/edittraduction) or [download a release](https://github.com/itsmng/edittraduction/releases) and place it within itsm's `plugins` folder.
+Installing this plugin is done following the standard process for itsm plugins, simply clone [the git repository](https://github.com/itsmng/edittraduction) or [download a release](https://github.com/itsmng/edittraduction/releases) and place it within ITSM `plugins` folder.
 
 Unzip the plugin archive, set Apache rights and enjoy !
 
