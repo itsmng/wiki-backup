@@ -94,7 +94,7 @@ Or download the JSON file from GitHub:
 
 	wget https://raw.githubusercontent.com/itsmng/grafana-template/main/ITSM-API.json
 
-Or copy the following dahsboard ID :
+Or copy the following dashboard ID :
 
 	18033
 
