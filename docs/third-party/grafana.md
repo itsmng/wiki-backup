@@ -90,15 +90,21 @@ To retrieve the template, clone the next GitHub repository :
 
 	git clone https://github.com/itsmng/grafana-template.git
 
-Or download the JSON file :
+Or download the JSON file from GitHub:
 
 	wget https://raw.githubusercontent.com/itsmng/grafana-template/main/ITSM-API.json
+
+Or copy the following dahsboard ID :
+
+	18033
 
 Next, in your Grafana, click on the Dashboard icon and `Import`.
 
 ![](../img/grafana/grafana_dashboard_import.png)
 
-Click on `Upload JSON file` and select the `ITSM-API.json` on the `grafana-template` folder.
+In the case you are using GitHub download method, click on `Upload JSON file` and select the `ITSM-API.json` on the `grafana-template` folder.
+
+You can also use our `grafana.com` dashboard by using the ID above. Copy the ID in `Import via grafana.com`.
 
 You can update the `Name` as you want and select the previously created `JSON API` data source.
 
