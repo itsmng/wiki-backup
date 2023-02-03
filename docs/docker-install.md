@@ -17,11 +17,11 @@ We'll review how to setup and maintain the ITSM-NG application via docker.
 
 To pull the latest ITSM-NG image, launch the following command :
 
-    docker pull itsm-ng/itsmng:latest
+    docker pull itsmng/itsm-ng:latest
 
 To pull a specific version replace `latest` by the desired version.
 
-    docker pull itsm-ng/itsmng:1.3.0
+    docker pull itsmng/itsm-ng:1.3.0
 
 ## Pull image from sources and build it locally
 
@@ -31,7 +31,7 @@ To build the image locally pull the git repository :
 
 Docker build command :
 
-    docker build --rm -f "MY_TAG/Dockerfile" -t itsm-ng/itsmng:MY_TAG "MY_TAG"
+    docker build --rm -f "MY_TAG/Dockerfile" -t itsmng/itsm-ng:MY_TAG "MY_TAG"
 
 ## Run ITSM-NG using docker
 
@@ -52,9 +52,9 @@ To run an ITSM-NG instance with the most basics settings, you can use the follow
     -e MARIADB_DATABASE=[DB_NAME] \
     -e MARIAD_USER=[DB_USER] \
     -e MARIADB_PASSWORD=[DB_PASSWORD] \
-    -idt itsm-ng/itsmng:MY_TAG
+    -idt itsmng/itsm-ng:MY_TAG
 
-See `List of all image tags` for more informations.
+See `List of all image tags` for more information.
 
 ### ITSM-NG image with MariaDB
 
@@ -111,7 +111,7 @@ Below you will find the volumes list created by ITSM-NG docker application and t
 
 ## Update ITSM-NG docker instance
 
-### Update ITSM-NG whitout MariaDB (docker run)
+### Update ITSM-NG without MariaDB (docker run)
 
 In the case of `docker run`, to update to the newest version run the following command :
 
@@ -119,7 +119,7 @@ In the case of `docker run`, to update to the newest version run the following c
 
 Retrieve the latest ITSM-NG image with the `pull` command :
 
-    docker pull itsm-ng/itsmng:MY_TAG
+    docker pull itsmng/itsm-ng:MY_TAG
 
 Then, restart your container :
 
@@ -129,7 +129,7 @@ Then, restart your container :
     -e MARIADB_DATABASE=[DB_NAME] \
     -e MARIAD_USER=[DB_USER] \
     -e MARIADB_PASSWORD=[DB_PASSWORD] \
-    -idt itsm-ng/itsmng:MY_TAG
+    -idt itsmng/itsm-ng:MY_TAG
 
 ### Update ITSM-NG with MariaDB (docker-compose)
 
