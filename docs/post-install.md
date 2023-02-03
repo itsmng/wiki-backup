@@ -48,7 +48,7 @@ Below you will find the list of actions as well as their description.
 | `itsmng:migration:domains_plugin_to_core`       | Migrate Domains plugin data to ITSM-NG main tables                                            |
 | `itsmng:migration:myisam_to_innodb`             | Migrate MyISAM tables to InnoDB                                                               |
 | `itsmng:migration:racks_plugin_to_core`         | Migrate Racks plugin data to ITSM-NG main tables                                              |
-| `itsmng:migration:timestamps`                   | Convert `datetime` fields to `timestamp` for using timezones                                  |
+| `itsmng:migration:timestamps`                   | Convert `datetime` fields to `timestamp` for using timezone                                   |
 | `itsmng:migration:unsigned_keys`                | Migrate primary/foreign keys to unsigned integers                                             |
 | `itsmng:oidc:update`                            | Each ITSM-NG user using openID connect must log in again to update their personal information |
 | `itsmng:plugin:activate`                        | Activate plugin(s)                                                                            |
