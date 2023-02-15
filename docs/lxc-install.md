@@ -2,6 +2,8 @@
 
 ## Install LXC template in Proxmox
 
+To use the lxc template, you should add the template in your proxmox.
+
 Download the LXC template
 
 ![](img/lxc/step1.png)
