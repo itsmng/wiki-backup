@@ -4,8 +4,8 @@
 
 To use the lxc template, you should add the template in your proxmox.
 
-Download the LXC template
 
+The templates are available on GitHub, you can download them [here](https://github.com/itsmng/itsm-lxc/releases).
 ![](img/lxc/step1.png)
 
 Select the LXC template storage
@@ -60,7 +60,7 @@ Click on start container now et Finish
 Et close the window
 ![](img/lxc/step16.png)
 
-Your container is create
+Now your container is create and running.
 ![](img/lxc/step17.png)
 
 Go to the console, log in with the root user and the password you have defined
