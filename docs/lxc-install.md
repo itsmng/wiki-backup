@@ -28,6 +28,8 @@ Click on ***Upload***
 
 ![](img/lxc/step6.png)
 
+Your template is now installed in proxmox, and you can use it to create containers.
+
 ## Create LXC container in Proxmox
 
 ![](img/lxc/step7.png)
