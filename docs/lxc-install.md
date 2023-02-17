@@ -62,7 +62,7 @@ Click on start container now et Finish
 Et close the window
 ![](img/lxc/step16.png)
 
-Now your container is create and running.
+Now your container is created and running.
 ![](img/lxc/step17.png)
 
 Go to the console, log in with the root user and the password you have defined
