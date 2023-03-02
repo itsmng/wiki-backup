@@ -6,7 +6,7 @@ ITSM-NG dev team provide a LXC image in order to install our product without hav
 
 ## How to add ITSM-NG LXC template in Proxmox
 
-To use our LXC template, you should add the template in Proxmox.
+To use our LXC template, you need to add the template in Proxmox.
 
 You will find all released templates at the following link : [https://github.com/itsmng/itsm-lxc/releases](https://github.com/itsmng/itsm-lxc/releases).
 
@@ -34,13 +34,13 @@ Then, follow the next steps to integrate the LXC template in Proxmox :
 
 ![](img/lxc/step6.png)
 
-The template is now added in Proxmox. You can use it to create container.
+The template is now added in Proxmox. You can use it to create a container.
 
 ## Create ITSM-NG LXC container in Proxmox
 
 Go to your Proxmox administration panel and create a new CT.
 
-At the `Template` tab, choose the ITSM-NG template.
+On the `Template` tab, choose the ITSM-NG template.
 
 ![](img/lxc/step9.png)
 
@@ -70,4 +70,6 @@ When the installation is completed, you can access to your ITSM-NG instance at t
 
 ## How to add ITSM-NG LXC template in other hypervisor
 
-This template can be used in hypervisor other than Proxmox. But we don't currently offer an installation guide.
+This template can be used in other hypervisor than Proxmox. But we don't currently offer an installation guide.
+
+If you manage to configure and use our LXC template in other context / hypervisor, feedback are welcomed.
