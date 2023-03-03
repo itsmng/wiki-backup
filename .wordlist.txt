@@ -87,3 +87,7 @@ Stockmanagement
 listtype
 lang
 listmanufacturer
+LXC
+lxc
+Proxmox
+ip

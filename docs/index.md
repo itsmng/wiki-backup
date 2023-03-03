@@ -9,6 +9,7 @@ ITSM-NG is a GLPI fork with the objective of offering a strong community compone
 * [Installation from sources](install.md)
 * [Installation using docker](docker-install.md)
 * [Installation using official repository](repo-install.md)
+* [Installation using LXC template](lxc-install.md)
 * [Update ITSM-NG or migrate from GLPI](update.md)
 * [Post installation](post-install.md)
 
