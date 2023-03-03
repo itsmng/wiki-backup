@@ -4,7 +4,7 @@ This plugin allows you to configure an alert threshold for a type of material or
 
 ## Installation
 
-Installing this plugin is done following the standard process for itsm plugins, simply clone the git or download a release and place it within itsm's `plugins` folder.
+Installing this plugin is done following the standard process for itsm plugins, simply clone the git or download a release and place it within ITSM-NG `plugins` folder.
 
 Don't forget to set Apache rights, and enjoy !
 
