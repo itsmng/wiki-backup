@@ -2,66 +2,7 @@
 
 ## Introduction
 
-This is a cross platform application. This application allow to list and handle tickets and computers.
-
-## List of pages
-
-* Home page : default page which contains Ticketing report (group by status / late / latest 24h) in a bar chart and Computer report (group by status) in a pie chart.
-* Ticket page : display the list of tickets 
-* Computer page: display the list of computers
-* Add tciket : page to create a new ticket
-* Add computer : page to create a new computer
-* Ticket detail : give more information about a ticket
-* Computer detail : give more information about a computer
-* Configuration: this page is used to set the ITSM-NG configuration (URL / App token / User token)
-
-## Application features
-
-* Reporting 
-    * Ticketing
-        * Ticket per status (New, Assigned, Planned, Pending)
-        * Late ticket
-        * Latest 24h ticket
-    * Computer
-        * Computer per status
-
-* List of ticket
-    * Display all tickets
-    * Let to change the default field (Name, Status, Open date) 
-    * Sort by Name or by the second field
-    * Filter by status
-    * Search a ticket
-    * Add a new ticket
-
-* List of computer
-    * Display all computer
-    * Let to change the default field (Name, Status, Open date) 
-    * Sort by Name or by the second field
-    * Filter by status
-    * Search a computer
-    * Add a new computer
-
-* Ticket detail
-    * Give more information about a ticket (Title / Priority / Entity / Location / Assigned etc...)
-    * Allow to delete or modify the ticket
-    * List of the associated Followup and Task
-    * Add new Followup and Task for the current ticket
-
-* Computer detail
-    * Give more information about a computer (Name / Update source / Serial / Location / Assigned etc...)
-    * Allow to delete or modify the computer
-    * List of the associated Ticket
-    * Add new Fticket associated to the current computer
-
-* Configuration    
-    * Change the ITSM-NG configuration
-
-* Language
-    * The default language depends on the device language
-    * Allow the change the language
-
-* Logout
-    * kill the session and redirect to the authentification page
+This is a cross platform application. This application allow to the list, create, modify, show more information of a ticket or a computer.
 
 ## Configurations
 
@@ -104,6 +45,65 @@ Run the application  and fill the form with `URL` , `API token` and `User token`
 
 Click on `Send`.
 
+## Application features
+
+* Reporting 
+    * Ticketing
+        * Ticket per status (New, Assigned, Planned, Pending)
+        * Late ticket
+        * Latest 24h ticket
+    * Computer
+        * Computer per status
+
+* List of ticket
+    * Display all tickets
+    * Let to change the default field (Name, Status, Open date) 
+    * Sort by Name or by the second field
+    * Filter by status
+    * Search a ticket
+    * Create a new ticket
+
+* List of computer
+    * Display all computer
+    * Let to change the default field (Name, Status, Open date) 
+    * Sort by Name or by the second field
+    * Filter by status
+    * Search a computer
+    * Create a new computer
+
+* Ticket information
+    * Show ticket information (Title / Priority / Entity / Location / Assigned etc...)
+    * Allow to delete or modify the ticket
+    * List of the associated Followup and Task
+    * Add new Followup and Task for the current ticket
+
+* Computer information
+    * Show computer information (Name / Update source / Serial / Location / Assigned etc...)
+    * Allow to delete or modify the computer
+    * List of the associated Tickets
+    * Create new ticket associated to the current computer
+
+* Configuration    
+    * Change the ITSM-NG configuration
+
+* Language
+    * The default language depends on the device language
+    * Allow to change the language
+
+* Logout
+    * kill the session and redirect to the authentification page
+## List of pages
+
+* Home page : default page which contains Ticketing report (group by status / late / latest 24h) in a bar chart and Computer report (group by status) in a pie chart.
+* Ticket page : display the list of tickets 
+* Computer page: display the list of computers
+* Create tciket : page to create a new ticket
+* Create computer : page to create a new computer
+* Ticket detail : give more information about a ticket
+* Computer detail : give more information about a computer
+* Configuration: this page is used to set the ITSM-NG configuration (URL / App token / User token)
+
+
 ## Somes samples
 
 ![](../img/android-app/android-app_example.png)
@@ -111,6 +111,6 @@ Click on `Send`.
 
 ## Error handling
 
-* Make a alert if ticket or computer data are empty
-* In the form control the empty field and an incorrect parameter
-* Generate a time out if connexion is not established
+* Send a alert if the data are empties
+* Control empty formd and incorrect param
+* Generate a time out 
