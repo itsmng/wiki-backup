@@ -174,6 +174,10 @@ Result :
     Do you want to continue ? [Yes/no] yes
     Installation done.
 
+After the installation, you need to update the permission on the folder files : 
+
+    sudo chown -R www-data: files
+
 Now, you can connect to ITSM-NG at [http://localhost/itsm-ng](http://localhost/itsm-ng) with the default user itsm/itsm.
 
 Enjoy ITSM-NG :-)
