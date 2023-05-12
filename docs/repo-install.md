@@ -107,9 +107,16 @@ On Fedora systems, install dnf-utils :
 
     sudo dnf install dnf-utils
 
-Then add the repository (replace **fc35** with **fc36** for Fedora 36) : 
+Then add the repository (fc35 in example) : 
 
     sudo yum-config-manager --add-repo http://rpm.itsm-ng.org/itsm-fc35.repo
+
+Available system versions :
+
+* `fc35` for Fedora 35
+* `fc36` for Fedora 36
+* `fc37` for Fedora 37
+* `fc38` for Fedora 38
 
 To install itsm-ng, run :
 
