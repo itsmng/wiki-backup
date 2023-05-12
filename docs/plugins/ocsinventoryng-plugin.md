@@ -83,7 +83,7 @@ This tab allows you to configure the synchronisation options between OCS and ITS
 
 ### General history
 
-From this tab, you can configure the historization for each executed actions.
+From this tab, you can configure the history for each executed actions.
 
 ![](../img/ocsinventoryng/ocsinventoryng_general_history.png)
 
@@ -131,7 +131,7 @@ With `Clean OCSNG deleted computers`, you can clean manually the removed OCS com
 
 #### Clean links between ITSM-NG and OCSNG
 
-This feature allows you to clean broken link betwwen ITSM-NG and OCS.
+This feature allows you to clean broken link between ITSM-NG and OCS.
 
 ![](../img/ocsinventoryng/ocsinventoryng_clean_link_computer.png)
 
@@ -200,7 +200,7 @@ From this page, you will be able to setup the behavior of the reconciliation bet
 
 ![](../img/ocsinventoryng/ocsinventoryng_ipdiscover_snmp.png)
 
-* `Merge IpDiscover equipment with SNMP equipment if IP address matches` : enable/disable the merging of Ipdiscover devices with SNMP devices if the IP address matches. If an IpDiscover equipment corresponds to an SNMP equipment, it will be automatically filled in as an identified equipment in OCS.
+* `Merge IpDiscover equipment with SNMP equipment if IP address matches` : enable/disable the merging of IpDiscover devices with SNMP devices if the IP address matches. If an IpDiscover equipment corresponds to an SNMP equipment, it will be automatically filled in as an identified equipment in OCS.
 * `Switch the equipment to identified on OCS with type` (required if the option above is enabled) : select the type of OCS network which will be automatically assigned to the IpDiscover equipment on OCS at the time of identification. 
 
 #### IpDiscover Non-Inventoried Equipment configurations
