@@ -86,3 +86,12 @@ LXC
 lxc
 Proxmox
 ip
+OCS
+Softwares
+SNMP
+IpDiscover
+Uptime
+Teamviewer
+Bitlocker
+OCSNG
+equipments
