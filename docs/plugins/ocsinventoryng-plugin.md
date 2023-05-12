@@ -1,32 +1,46 @@
 # OCS Inventory NG
 
-This plugin will synchronize your ITSM-NG with you OCS inventory NG.
+This plugin allows you to synchronize OCS Inventory data in your ITSM-NG instance.
 
 ## Installation
 
 Installing this plugin is done following the standard process for itsm plugins, simply clone [the git repository](https://github.com/itsmng/ocsinventoryng) or [download a release](https://github.com/itsmng/ocsinventoryng/releases) and place it within ITSM `plugins` folder.
 
+Unzip the plugin archive, set Apache rights and enjoy !
+
+## Features
+
+It bundle a lot of feature in order to import the following data from OCS Inventory :
+
+* Computers information
+* Softwares information
+* SNMP Scanned devices
+* IpDiscover scans
+* OCS' plugins information
+
+Supported plugin list :
+
+* Office licences
+* Antivirus information
+* Windows update status
+* Uptime
+* Teamviewer
+* Windows users
+* Proxy configuration
+* Extended operating system information
+* Services
+* Custom installed application
+* Network drives
+* Process list
+* Bitlocker
+
 ## Configuration
 
-First, you need to configure your OCS server in ITSM-NG.
-For that, you can click on the wrench on the plugin page, then, click on OCSNG servers and add new server.
-![](../img/ocsinventoryng/config_plugin_1.png)
+To setup the connection between OCS Inventory database and ITSM-NG, go to `Tools > OCS Inventory NG` and click on `Add a OCSNG server`.
 
-Then, you can set your server name, the host and configure your database with the database name, the user and the password.
+It's also possible to configure a server from `Setup > Plugins > OCS Inventory NG > OCSNG servers`.
 
-You can also configure the data who will be imported in the configuration.
-![](../img/ocsinventoryng/config_plugin_datatoimport.png)
 
-## Feature
-
-The plugin add new page on `Tools/OCS Inventory NG`.
-This page can have 4 tabs : 
-- Server Setup (always here)
-- Inventory Import (always here)
-- IPDiscover Import (if ocs ipdiscover is configured)
-- SNMP Import (if ocs ipdiscover is configured)
-
-For each tab, you can choose your ocs server in case you have multiple ocs server configured.
 
 ### Server Setup
 
