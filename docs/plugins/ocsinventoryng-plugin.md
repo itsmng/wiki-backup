@@ -243,7 +243,7 @@ To identified a `Non Imported` or a `Non inventoried` equipment, click on the co
 
 You can also choose to delete it from OCS to click on `Delete from OCSNG`.
 
-To delete an `Identified` equipment, click on the `Identified` count, select the row and click on `Delete link`. This action remove the equipment from ITSm-NG and from OCS.
+To delete an `Identified` equipment, click on the `Identified` count, select the row and click on `Delete link`. This action remove the equipment from ITSM-NG and from OCS.
 
 #### Semi automatic import/synchronization
 
@@ -251,7 +251,7 @@ To import/synchronize IpDiscover equipments, you can manually launch the automat
 
 * `Import IpDiscover non-inventoried equipments` : imports only the non-inventoried equipments from OCS as Network Equipment with `OCSNG - Non-Inventoried` status in ITSM-NG.
 * `Import IpDiscover identified equipments` : imports only the identified equipments from OCS. If no configuration has been entered for the OCS types (see `IpDiscover Identified Equipment configurations`) then they will be inventoried as Network Equipment with the status `OCSNG - Identified` in ITSM-NG.
-* `Import all IpDiscover equipments` : imports all types of ipdiscover equipment combined from OCS in ITSM-NG.
+* `Import all IpDiscover equipments` : imports all types of IpDiscover equipment combined from OCS in ITSM-NG.
 * `Synchronize IpDiscover equipments already imported` : synchronizes the imported equipments if necessary.
 * `Synchronize IpDiscover equipments already imported (force)` : force the synchronization of all imported equipments.
 
