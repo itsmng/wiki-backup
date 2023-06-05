@@ -82,6 +82,11 @@ MyISAM
 SCSS
 openID
 Whitelabel
+stockmanagement
+Stockmanagement
+listtype
+lang
+listmanufacturer
 LXC
 lxc
 Proxmox

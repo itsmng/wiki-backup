@@ -30,6 +30,7 @@ ITSM-NG is a GLPI fork with the objective of offering a strong community compone
 * [Edit Translations](plugins/edittranslation-plugin.md)
 * [Holidays](plugins/holidays-plugin.md)
 * [Split dropdown](plugins/splitdropdown-plugin.md)
+* [Stock management](plugins/stockmanagement-plugin.md)
 
 ## Useful links
 
